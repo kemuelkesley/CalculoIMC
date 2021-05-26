@@ -21,6 +21,7 @@ def Tabela():
 
 Tabela()
 
+nome = input('Informe seu nome:')
 altura = float(input('Digite sua altura em metros:'))
 peso = float(input('Digite seu Peso em KG:'))
 imc = peso / (altura * 2)
@@ -28,19 +29,25 @@ print('IMC = {}'.format(imc))
 
 
 if imc < 16:
-    print('Magreza grave')
+    print('Seu IMC é: {}'.format(imc))
+    print('%s, você está com Magreza grave' %nome)
 elif imc < 17:
-    print('Magreza Moderada')   
-elif imc < 18.8:
-    print('Magreza Leve')     
+    print('Seu IMC é: {}'.format(imc))
+    print('%s, você está com Magreza Moderada'%nome)   
+elif imc < 18:
+    print('Seu IMC é: {}'.format(imc))
+    print('%s, você está com Magreza Leve'%nome)    
 elif imc < 25:
-    print('Saudavel')    
+    print('Seu IMC é: {}'.format(imc))
+    print('%s, você está Saudavel, PARABÉNS.'%nome)    
 elif imc < 30:
-    print('Sobrepeso')
+    print('Seu IMC é: {}'.format(imc))
+    print('%s, você está com Sobrepeso'%nome)
 elif imc < 35:
-    print('Obesidade Grau I')
-elif imc < 40:
-    
-    print('Obesidade Grau II')        
+    print('Seu IMC é: {}'.format(imc))
+    print('%s você está com Obesidade Grau I'%nome)
+elif imc < 40:    
+    print('Seu IMC é: {}'.format(imc))
+    print('%s, você está com Obesidade Grau II'%nome)        
 
 os.system("pause")
